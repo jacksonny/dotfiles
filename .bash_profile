@@ -1,5 +1,9 @@
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/share/man:$MANPATH
+
+# paths
+if [ -f ~/.bash_paths ]; then
+
+	        . ~/.bash_paths
+fi
 
 # aliases
 alias ls='ls -CaG'
