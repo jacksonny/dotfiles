@@ -2,7 +2,7 @@
 # paths
 if [ -f ~/.bash_paths ]; then
 
-	        . ~/.bash_paths
+        . ~/.bash_paths
 fi
 
 # aliases
