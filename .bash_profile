@@ -6,12 +6,15 @@ if [ -f ~/.bash_paths ]; then
 fi
 
 # aliases
-alias ls='ls -CaG'
-
 if [ -f ~/.bash_aliases ]; then
 	 
 	. ~/.bash_aliases
 fi
 
+# colors
+#export LS_OPTIONS='--color'
+eval `dircolors ~/.dir_colors`
+alias ls='gls -hF --color'
+
 # prompt
-export PS1="[\t \w]\n"
+export PS1="\e[0m[\e[01;38;5;36m\u@\h \e[01;38;5;136m\w\e[0m]\n$ "
