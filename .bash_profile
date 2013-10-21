@@ -20,7 +20,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # colors
-eval `dircolors ~/.dir_colors`
+eval `dircolors -b ~/.dir_colors`
 alias ls='gls -hF --color'
 alias ll='gls -hFl --color'
 
