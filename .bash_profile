@@ -6,6 +6,14 @@ if [ -f ~/.bash_paths ]; then
 fi
 
 # aliases
+alias ssh="ssh -X"
+alias ..="cd .."
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias vi='vim'
+alias bc='bc -l'
+
 if [ -f ~/.bash_aliases ]; then
 	 
 	. ~/.bash_aliases
